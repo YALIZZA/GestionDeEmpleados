@@ -31,9 +31,9 @@ public class Main {
                     System.out.print("Salario: ");
                     double salarioA = entrada.nextDouble();
                     System.out.print("departamento: ");
-                    String departamento = entrada.nextLine();
                     entrada.nextLine();//limpia el buffer
-                    personas.add(new Administrativo(nombreA, cargoA, salarioA, departamento));
+                    String departamentoA = entrada.nextLine();
+                    personas.add(new Administrativo(nombreA, cargoA, salarioA, departamentoA));
                     break;
                 case 2:
                     System.out.print("Nombre: ");
@@ -54,8 +54,9 @@ public class Main {
                     System.out.print("Salario: ");
                     double salarioDes = entrada.nextDouble();
                     System.out.print("lenguaje: ");
-                    String lenguaje = entrada.nextLine();
                     entrada.nextLine();//limpia el buffer
+                    String lenguaje = entrada.nextLine();
+                    
                     personas.add(new Desarrollador(nombreDes, cargoDes, salarioDes, lenguaje));
                     break;
                 case 4:
@@ -66,8 +67,9 @@ public class Main {
                     System.out.print("Salario: ");
                     double salarioT = entrada.nextDouble();
                     System.out.print("tipo de test: ");
-                    String tipoTest = entrada.nextLine();
                     entrada.nextLine();//limpia el buffer
+                    String tipoTest = entrada.nextLine();
+                   
                     personas.add(new Tester(nombreT, cargoT, salarioT, tipoTest));
                     break;
                 case 5:
