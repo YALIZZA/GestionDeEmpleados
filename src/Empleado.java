@@ -17,6 +17,6 @@ public class Empleado extends Persona {
 
     @Override
     public void mostrarDatos() {
-        System.out.println("EMPLEADO - nombre: " + nombre + "cargo: " + cargo + "salario: " + salario);
+        System.out.println("EMPLEADO - nombre: " + nombre + " cargo: " + cargo + " salario: " + salario);
     }
 }

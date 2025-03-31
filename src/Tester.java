@@ -17,6 +17,6 @@ public class Tester extends Empleado{
 
     @Override
     public void mostrarDatos() {
-        System.out.println("TESTER - nombre: " +nombre + "cargo: " +cargo + "salario: " + getSalario() + "tipo de test: " + tipoTest);
+        System.out.println("TESTER - nombre: " +nombre + " cargo: " +cargo + " salario: " + getSalario() + " tipo de test: " + tipoTest);
     }
 }

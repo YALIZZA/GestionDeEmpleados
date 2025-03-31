@@ -17,7 +17,7 @@ public class Directivo extends Empleado{
 
     @Override
     public void mostrarDatos() {
-        System.out.println("DIRECTIVO - nombre: " + nombre + "cargo: " + cargo + "salario: " + getSalario() + "num proyectos: " + numProyectos);
+        System.out.println("DIRECTIVO - nombre: " + nombre + " cargo: " + cargo + " salario: " + getSalario() + " numeros de proyectos: " + numProyectos);
     }
     
 }

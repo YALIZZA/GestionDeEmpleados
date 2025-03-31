@@ -17,7 +17,7 @@ public class Administrativo extends Empleado {
     
     @Override
     public void mostrarDatos() {
-        System.out.println("ADMINISTRATIVO - nombre: " + nombre + "cargo: " + cargo + "salario: " + getSalario() + "departamento: " + departamento);
+        System.out.println("ADMINISTRATIVO - nombre: " + nombre + " cargo: " + cargo + " salario: " + getSalario() + " departamento: " + departamento);
     }
        
 }

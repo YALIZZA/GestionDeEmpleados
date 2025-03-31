@@ -31,8 +31,9 @@ public class Main {
                     System.out.print("Salario: ");
                     double salarioA = entrada.nextDouble();
                     System.out.print("departamento: ");
-                    String departamentoA = entrada.nextLine();
-                    personas.add(new Administrativo(nombreA, cargoA, salarioA, departamentoA));
+                    String departamento = entrada.nextLine();
+                    entrada.nextLine();//limpia el buffer
+                    personas.add(new Administrativo(nombreA, cargoA, salarioA, departamento));
                     break;
                 case 2:
                     System.out.print("Nombre: ");
@@ -42,8 +43,8 @@ public class Main {
                     System.out.print("Salario: ");
                     double salarioD = entrada.nextDouble();
                     System.out.print("numumero de proyectos: ");
-                    int numProyectosD = entrada.nextInt();
-                    personas.add(new Directivo(nombreD, cargoD, salarioD, numProyectosD));
+                    int numProyectos = entrada.nextInt();
+                    personas.add(new Directivo(nombreD, cargoD, salarioD, numProyectos));
                     break;
                 case 3:
                     System.out.print("Nombre: ");
@@ -53,8 +54,9 @@ public class Main {
                     System.out.print("Salario: ");
                     double salarioDes = entrada.nextDouble();
                     System.out.print("lenguaje: ");
-                    String lenguajeDes = entrada.nextLine();
-                    personas.add(new Desarrollador(nombreDes, cargoDes, salarioDes, lenguajeDes));
+                    String lenguaje = entrada.nextLine();
+                    entrada.nextLine();//limpia el buffer
+                    personas.add(new Desarrollador(nombreDes, cargoDes, salarioDes, lenguaje));
                     break;
                 case 4:
                     System.out.print("Nombre: ");
@@ -64,8 +66,9 @@ public class Main {
                     System.out.print("Salario: ");
                     double salarioT = entrada.nextDouble();
                     System.out.print("tipo de test: ");
-                    String tipoTestT = entrada.nextLine();
-                    personas.add(new Tester(nombreT, cargoT, salarioT, tipoTestT));
+                    String tipoTest = entrada.nextLine();
+                    entrada.nextLine();//limpia el buffer
+                    personas.add(new Tester(nombreT, cargoT, salarioT, tipoTest));
                     break;
                 case 5:
                      if (personas.isEmpty()) {

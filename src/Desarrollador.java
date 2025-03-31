@@ -16,7 +16,7 @@ public void setLenguaje(String lenguaje) {
 }
 @Override
 public void mostrarDatos() {
-    System.out.println("DESARROLLADOR - nombre: " + nombre + "cargo: " + cargo + "salario: " + getSalario() + "lenguaje: " + lenguaje);
+    System.out.println("DESARROLLADOR - nombre: " + nombre + " cargo: " + cargo + " salario: " + getSalario() + " lenguaje: " + lenguaje);
 }
 
 }
